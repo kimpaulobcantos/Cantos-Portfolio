@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KIM CANTOS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="home">
+            <div class="section-content">
+                <div class="home-content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>I'm a passionate developer creating amazing digital experiences</p>
+                    <a href="#profile" class="cta-button">Get to Know Me</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="profile">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="9a1bf717-1ecf-4cfa-9bb0-8b031bddd920.jpg" alt="Your Name" class="profile-photo" id="profile-img">
+                        <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Hello, I'm Kim Paulo B. Cantos</h3>
+                        <p>I'm a dedicated second-year IT student at Occidental Mindoro State College, currently pursuing a Bachelor of Science in Information Technology. My academic journey has equipped me with a solid foundation in programming languages such as Python and Java alongside a strong understanding of data structures and algorithms.
+</p>
+                        <p>I am a dedicated and passionate developer with expertise i digital solutions. With a strong foundation in modern web te build user-friendly applications that make a difference.
+
+</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <div class="section-content">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-title" onclick="toggleSkillDescription(this)">
+                            Problem Solving and Analytical Thinking
+                            <span class="toggle-icon">+</span>
+                        </h3>
+                        <div class="skill-description-container">
+                            <p class="skill-description">Ability to break down complex problems into manageable parts and develop logical solutions through systematic analysis.</p>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Problem Analysis</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Logical Reasoning</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Solution Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title" onclick="toggleSkillDescription(this)">
+                            Communication and Teamwork
+                            <span class="toggle-icon">+</span>
+                        </h3>
+                        <div class="skill-description-container">
+                            <p class="skill-description">Strong interpersonal skills with the ability to collaborate effectively in team environments and communicate ideas clearly.</p>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Verbal Communication</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Team Collaboration</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Written Communication</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title" onclick="toggleSkillDescription(this)">
+                            Time Management and Organization
+                            <span class="toggle-icon">+</span>
+                        </h3>
+                        <div class="skill-description-container">
+                            <p class="skill-description">Efficient planning and prioritization skills to manage multiple tasks and meet deadlines while maintaining quality standards.</p>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Task Prioritization</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Schedule Management</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Project Organization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title" onclick="toggleSkillDescription(this)">
+                            Adaptability and Continuous Learning
+                            <span class="toggle-icon">+</span>
+                        </h3>
+                        <div class="skill-description-container">
+                            <p class="skill-description">Embracing change and maintaining a growth mindset to continuously acquire new knowledge and adapt to evolving situations.</p>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Learning Agility</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Flexibility</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Self-Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title" onclick="toggleSkillDescription(this)">
+                            Critical Thinking
+                            <span class="toggle-icon">+</span>
+                        </h3>
+                        <div class="skill-description-container">
+                            <p class="skill-description">Objective analysis and evaluation of information to form well-reasoned judgments and make informed decisions.</p>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Information Analysis</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Decision Making</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Objective Evaluation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact">
+            <div class="section-content">
+                <h2>Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
+                        
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>kimpaulobcantos@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <span>09912702937</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong>
+                            <span>Brgy, Tibag, Abra De Ilog Occ. Mindoro</span>
+                        </div>
+                        
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
